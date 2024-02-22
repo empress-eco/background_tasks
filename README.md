@@ -1,35 +1,61 @@
-## Background Tasks Unleashed (BTU) v14
+<div align="center">
+  <img src="https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png" alt="Backport Logo">
+</div>
 
-For details, please refer to the **[Official Documentation](https://datahenge.github.io/btu/)**.
-* The companion application, the **BTU Scheduler**, is maintained <a href="https://github.com/Datahenge/btu_scheduler_daemon" target='_blank'>on a separate GitHub site</a>.
+<p align="center">
+Backport is a powerful GitHub action tool designed to simplify the process of backporting PRs, making developers' lives easier.
+<br />
+<a href="https://grow.empress.eco/">Explore the Docs</a>
+·
+<a href="https://github.com/empress-eco/backport/issues">Report Bug</a>
+·
+<a href="https://github.com/empress-eco/backport/issues/new">Request Feature</a>
+</p>
 
-### What is BTU?
-Background Tasks Unleashed is:
+## 👉 About The Project
 
-1. a [Frappe Framework](https://github.com/frappe) application for Task Scheduling and Automation.
-2. a tool for running tasks or processes *automatically*, on a repeating schedule, in the background of your Frappe web application.
-3. a robust alternative to the out-of-the-box **`Scheduled Job Types`** featured in the Frappe framework.
+### 📖 Overview
+Backport is a GitHub action tool specifically created to streamline the process of backporting PRs. It's designed with developers in mind, providing an efficient method for backporting to branch names. 
 
-<img style="text-align: center;" src="https://datahenge.github.io/btu/images/btu_screenshot_v14_workspace_1.png" alt="BTU Workspace" title="image Title" width="800"/>
+### 🌟 Key Features
+- **Ease of Use**: You can backport to any `branchname` simply.
+- **Efficiency**: The tool runs after the PR merge, saving you time.
+- **Support**: It supports squashed PRs backporting.
+- **Convenience**: It creates a backport on `Empress-pr-bot`'s fork of the original repository.
 
-### Capabilities
-Using only your web browser, take full control of the BTU application.  No need to SSH and modify `hooks.py`.
+### 🛠 Technical Stack
+This project is built with TypeScript, a powerful tool that ensures robustness and scalability.
 
-* **Tasks** organize your reusable jobs, enabling you to run any Python function (standard or custom) and pass your own arguments.
-* **Schedules** will run Tasks in the background, at any cadence required (FYI, we can do cron...*with timezones!*)
-* **Logs** give you visibility into your Task history.  Not just success or fail, but the *complete standard output and errors*.
+## 🚀 Getting Started
 
-You can also:
+### Prerequisites
+To use Backport, you need to have a basic understanding of GitHub actions and TypeScript.
 
-* Run any Task on-demand.
-* When a scheduled Task completes, automatically receive an email notification (including CC and BCC)
-* Use an included CLI application to interact with the BTU from a shell terminal, instead of your web browser.
-
-----
 ### Installation
-A complete [Installation Guide](https://datahenge.github.io/btu/installation.html) is available on BTU's GitHub Pages site.
+To install and run Backport, follow these steps:
 
-### Copyright and License
-* Background Tasks Unleashed (BTU) is licensed MIT. (*See LICENSE.md file*)
-* Copyright 2021-2023, Datahenge LLC
-* Maintainer: Brian Pond <brian@datahenge.com>
+1. Clone the repository: `git clone https://github.com/empress-eco/backport.git`
+2. Navigate to the repository: `cd backport`
+3. Install NPM packages: `npm install`
+
+### Usage
+To backport to a `branchname`, simply add a label on PR with the name `backport branchname`. You can do this either before or after merging the PR. The action will run once it's merged.
+
+## 💡 Contributing
+We appreciate your contributions! Here's how you can contribute:
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+Please ensure you generate JavaScript files using `tsc` TypeScript compiler before committing.
+
+## 📜 License and Acknowledgements
+
+### License
+This project is under the MIT License. Your contributions are also licensed under the MIT License.
+
+### Acknowledgements
+We would like to express our heartfelt gratitude to the Empress Community, the geniuses behind the essential tools that power this project. Their innovation, dedication, and pioneering work have been instrumental in building the foundations and functionalities we rely on. We are profoundly grateful for their ongoing support.
